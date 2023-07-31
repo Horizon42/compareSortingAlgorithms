@@ -105,8 +105,7 @@ void selectionSort(int* pData, int n) {
 }
 
 // parses input file to an integer array
-int parseData(char *inputFileName, int **ppData)
-{
+int parseData(char *inputFileName, int **ppData) {
 	FILE* inFile = fopen(inputFileName,"r");
 	int dataSz = 0;
 	*ppData = NULL;
@@ -122,8 +121,7 @@ int parseData(char *inputFileName, int **ppData)
 }
 
 // prints first and last 100 items in the data array
-void printArray(int pData[], int dataSz)
-{
+void printArray(int pData[], int dataSz) {
 	int i, sz = dataSz - 100;
 	printf("\tData:\n\t");
 	for (i=0;i<100;++i)
@@ -139,8 +137,7 @@ void printArray(int pData[], int dataSz)
 	printf("\n\n");
 }
 
-int main(void)
-{
+int main(void) {
 	clock_t start, end;
 	int i;
     double cpu_time_used;
